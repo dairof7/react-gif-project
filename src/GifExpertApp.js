@@ -2,19 +2,24 @@ import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ( {defaultCategories = [] }) => {
     //puedo usar las categorias de esta forma si nunca se van a modificar
     //de lo contraria es mejor usar hooks
     //const categories = ['One Punch', 'Samurai X', 'Dragon Ball'];
 
-    const [categories, setCategories] = useState([''])
-    console.log('la app')
+    const [categories, setCategories] = useState( defaultCategories )
+    //const [categories, setCategories] = useState([''])
+
     return (
         <>
             <h2>Gif Search</h2>
             {/* enviamos la funcion setcategories al argumento con el mismo nombre */}
             <AddCategory setCategories={ setCategories } />
             <hr/>
+            {/* <input className='nGift'
+                type='number'
+                value='10'
+            ></input> */}
             <ol>
                 {
                     categories.map( category => (

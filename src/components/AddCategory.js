@@ -12,8 +12,10 @@ export const AddCategory = ({ setCategories }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         //cuando uso una funcion useState puedo usar el valor del estado anterior categ en este caso
-        setCategories(categ => [ inputValue,...categ ] )
-        setinputValue('')
+        if ( inputValue.trim().length > 2 ) {
+            setCategories(categ => [ inputValue,...categ ] )
+            setinputValue('')
+        }
 
     }
 

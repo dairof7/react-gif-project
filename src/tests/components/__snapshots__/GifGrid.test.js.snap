@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <GifGrid /> should show correctly snapshot 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeInLeft"
+  >
+     
+    samurai
+     
+  </h3>
+  <p>
+    Loading...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`test <GifGrid /> should show items when images are uploaded with useFectchGifts 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeInLeft"
+  >
+     
+    samurai
+     
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="lo que sea"
+      url="https://localhost/lo/qie/sea.jpg"
+    />
+    <GifGridItem
+      id="ABCDE"
+      key="ABCDE"
+      title="lo que sea"
+      url="https://localhost/lo/qie/sea.jpg"
+    />
+  </div>
+</Fragment>
+`;

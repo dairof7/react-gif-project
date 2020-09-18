@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifGridItem /> should show correctly the component 1`] = `
+<div
+  className="card animate__animated animate__backInDown"
+>
+  <img
+    alt="titulo"
+    src="https://localhost/hola.jpg"
+  />
+  <p>
+    titulo
+  </p>
+</div>
+`;
